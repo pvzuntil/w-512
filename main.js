@@ -35,7 +35,7 @@ function newBlankNode() {
 var node = newBlankNode()
 
 function draw() {
-	addNum()
+	var baru = addNum()
 	con.clearRect(0, 0, 415, 415)
 	for (var i = 0; i < 4; i++) {
 		for (var j = 0; j < 4; j++) {
@@ -60,6 +60,8 @@ function draw() {
 				} else {
 					con.fillText(node[i][j], 105 * j + 50, 105 * i + 70)
 				}
+				con.strokeStyle = 'black'
+				con.strokeRect(105 * baru.y, 105 * baru.x, 100, 100)
 			}
 		}
 	}
@@ -94,15 +96,19 @@ function addNum() {
 		}
 	}
 
-	if (posKo.length > 0) {
-		var posisi = acakPo(posKo)
-		node[posisi.x][posisi.y] = genNum()
-	}
-
 	if (posKo.length - 1 == 0) {
 		isFull = true
 	} else {
 		isFull = false
+	}
+
+	if (posKo.length > 0) {
+		var posisi = acakPo(posKo)
+		node[posisi.x][posisi.y] = genNum()
+		return {
+			x: posisi.x,
+			y: posisi.y
+		}
 	}
 }
 
