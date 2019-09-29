@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.main {
+    background-color: #80bbce;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px grey;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.title {
+    margin-left: 10px;
+    font-size: 48px;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    margin-right: 10px;
+    text-align: center;
+    background-color: lightblue;
+    padding: 5px 9px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px grey
+}
+
+.btn {
+    padding: 5px 9px;
+    border: 0;
+    background-color: lightblue;
+    box-shadow: 1px 1px 2px grey;
+    border-radius: 3px;
+}
+
+.modal {
+    position: fixed;
+    height: 0%;
+    width: 100%;
+    background-color: #778899d9;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}

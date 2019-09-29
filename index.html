@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GAMEE</title>
+
+    <link rel="stylesheet" href="sty.css" />
+  </head>
+  <body>
+    <div class="modal">
+      <h1 id="msg">GAME OVER</h1>
+      <br />
+      <button class="btn" onclick="mainLagi()">MAIN LAGI !</button>
+    </div>
+    <div class="container">
+      <div class="main">
+        <div class="row">
+          <div class="title">
+            W-512
+          </div>
+          <div class="score">
+            <div class="card">
+              <p>SCORE</p>
+              <h4 id="cS">0</h4>
+            </div>
+            <div class="card">
+              <p>HI-SCORE</p>
+              <h4 id="hS">0</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <button onclick="newGame()" class="btn">NEW GAME</button>
+        </div>
+        <canvas width="410" height="410" id="can"></canvas>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
